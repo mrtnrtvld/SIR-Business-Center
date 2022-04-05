@@ -27,13 +27,10 @@
   <link rel="stylesheet" href="/main.c52e0fe2.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css">
-
-
 <script src="/normalize.1114379f.js"></script><script src="/main.c52e0fe2.js"></script></head>
 
-<body class="scrollable">
-    
-    <header role="header">
+<body class="scrollable"> 
+    <header role="banner">
       <div class="logo-box">
         <div class="logo" role="contentinfo">
           <img src="/sir-bc-logo.7d9c0459.svg" alt="SIR Business Center Logo">
@@ -90,8 +87,20 @@
         <div class="slider" id="main-slider" data-splide="{&quot;type&quot;:&quot;loop&quot;}">
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide"><img src="/slide-1.3aa5cb16.png"></li>
-                <li class="splide__slide"><img src="/slide-2.5332d0d2.png"></li>
+                <li class="splide__slide">
+                  <picture>
+                    <source media="(max-width: 834px)" srcset="/slide-1-mobile.9e6a6cfe.png">
+                    <source srcset="/slide-1.3aa5cb16.png">
+                    <img src="/slide-1.3aa5cb16.png" alt="slide-1">
+                  </picture>
+                 </li>
+                 <li class="splide__slide">
+                  <picture>
+                    <source media="(max-width: 834px)" srcset="/slide-1-mobile.9e6a6cfe.png">
+                    <source srcset="/slide-1.3aa5cb16.png">
+                    <img src="/slide-2.5332d0d2.png" alt="slide-2">
+                  </picture>
+                 </li>
               </ul>
           </div>  
         </div>
@@ -176,10 +185,10 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <ul>
-                  <li><img src="/Cerner.3665bddd.png"></li>
-                  <li><img src="/Epic.59cff9a7.png"></li>
-                  <li><img src="/Nuance.4716ccc9.png"></li>
-                  <li><img src="/NVoc.924b29f1.png"></li>
+                  <li><img src="/Cerner.3665bddd.png" alt="cerner logo"></li>
+                  <li><img src="/Epic.59cff9a7.png" alt="epic logo"></li>
+                  <li><img src="/Nuance.4716ccc9.png" alt="nuance logo"></li>
+                  <li><img src="/NVoc.924b29f1.png" alt="nvoc logo"></li>
                 </ul>
               </li>
               <li class="splide__slide">
@@ -204,11 +213,11 @@
           3975 Fair Ridge Drive • Suite 400 North • Fairfax, Virginia 22033<br>
           (703) 691-1805  • Fax (703) 691-1855
         </div>
-        <div>
-          <a href="">Terms of Use</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Content, Links and Copyright</a>
-          <a href="">Advertise</a>
+        <div role="menu">
+          <a role="menuitem" href="#">Terms of Use</a>
+          <a role="menuitem" href="#">Privacy Policy</a>
+          <a role="menuitem" href="#">Content, Links and Copyright</a>
+          <a role="menuitem" href="#">Advertise</a>
         </div>
         <div>
           <img src="/sir-logo-white.ec7e5fe4.svg" alt="SIR logo">
@@ -217,20 +226,20 @@
         <div>© 2021 The Society of Interventional Radiology. All rights reserved.</div>
       </div>
       
-      <div class="footer-product-types">
+      <div class="footer-product-types" role="menu">
         <p>PRODUCT TYPES</p>
         <ul>
-          <li>Discharge Summaries</li>
-          <li>Operations Toolkits</li>
-          <li>Marketing Toolkits</li>
-          <li>Staffing Toolkits</li>
-          <li>Equipment Booklet</li>
-          <li>Coding Guidances</li>
-          <li>Reimbursement & Claims Templates</li>
-          <li>Revenue Cycle Management Audit</li>
-          <li>Facilities Guidelines</li>
-          <li>EHR Medical Templates</li>
-          <li>Informed Consent Forms</li>
+          <li role="menuitem"><a href="#">Discharge Summaries</a></li>
+          <li role="menuitem"><a href="#">Operations Toolkits</a></li>
+          <li role="menuitem"><a href="#">Marketing Toolkits</a></li>
+          <li role="menuitem"><a href="#">Staffing Toolkits</a></li>
+          <li role="menuitem"><a href="#">Equipment Booklet</a></li>
+          <li role="menuitem"><a href="#">Coding Guidances</a></li>
+          <li role="menuitem"><a href="#">Reimbursement & Claims Templates</a></li>
+          <li role="menuitem"><a href="#">Revenue Cycle Management Audit</a></li>
+          <li role="menuitem"><a href="#">Facilities Guidelines</a></li>
+          <li role="menuitem"><a href="#">EHR Medical Templates</a></li>
+          <li role="menuitem"><a href="#">Informed Consent Forms</a></li>
         </ul>
       </div>
     </footer>
