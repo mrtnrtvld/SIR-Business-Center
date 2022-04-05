@@ -214,6 +214,7 @@ textarea {
 
    .nav-product-categories-title{
      font-size: 20px;
+     color: var(--sir-header-blue);
      text-transform: uppercase;
      margin-bottom: 10px;
      display: block;
@@ -229,6 +230,15 @@ textarea {
    .nav-product-categories li, .nav-utility-links li{
      padding: 5px 0;
    }
+
+   .nav-product-categories a, .nav-product-categories a:visited, .nav-product-categories a:active{
+    color: var(--sir-blue);
+    text-decoration: none;
+  }
+
+  .nav-product-categories a:hover{
+    color: var(--sir-lime);
+  }
 
    .nav-utility-links{
      padding-left: 53px;
