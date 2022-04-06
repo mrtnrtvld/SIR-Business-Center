@@ -10,6 +10,7 @@
   --sir-lime: #c4d601;
   --sir-blue: #2c576d;
   --sir-header-blue: #026D9D;
+  --sir-header-blue-light: #DAE7EF;
   --sir-green-dark: #00757e;
   --sir-green-light: #00757e;
   --sir-black: #333333;
@@ -287,12 +288,15 @@ textarea {
      align-items: center;
      padding: 0 0 0 40px;
      color: var(--sir-white);
-     position: absolute;
-     z-index: 2;
-     top: 0;
-     left: 0;
+     position: relative;
    }
 
+   .breadcrumb--frontpage{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+   }
    .breadcrumb::after{
      content:"";
      height: 70px;
@@ -300,7 +304,11 @@ textarea {
      background-color: var(--sir-blue);
      clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
      position: absolute;
-     right: -24px;
+    right: -24px;
+   }
+   .breadcrumb--frontpage::after{
+    position: absolute;
+    right: -24px;
    }
 
    .statement-box{
@@ -436,13 +444,11 @@ textarea {
     align-items: flex-end;
     text-align: left;
   }
-
   .fortysixty img{
     width:450px;
     height: 360px;
     object-fit: cover;
   }
-
   .fortysixty h2{
     font-weight: 300;
     font-size: 36px;
@@ -450,7 +456,6 @@ textarea {
     margin: 15px 0;
     margin-bottom: -15px;
   }
-
   .fortysixty-button{
     background-color: var(--sir-green-light);
     font-weight: 500;
@@ -461,7 +466,6 @@ textarea {
     padding: 30px 43px;
     cursor: pointer;
   }
-
   .affinity-partners-block{
     text-align: center;
     display: flex;
@@ -469,7 +473,6 @@ textarea {
     position: relative;
     margin-top: 60px;
   }
-
   .affinity-partners-block::before{
     content: '';
     display: flex;
@@ -480,8 +483,6 @@ textarea {
     position: absolute;
     top: 0;
   }
-
-
   .affinity-partners-block ul{
     display: flex;
     flex-direction: row;
@@ -489,29 +490,23 @@ textarea {
     align-items: center;
     margin-bottom: 20px;
   }
-
   .affinity-partners-block h2{
     color: var(--sir-header-blue);  
     font-weight: 300;
     font-size: 36px;
   }
-
   .affinity-partners-block ul li{
     list-style: none;
   }
-
   #affinity-slider{
     margin: 20px 0 80px 0;
   }
-
   .affinity-partners-block .splide__pagination{
     bottom: -4em !important;
   }
-
   .affinity-partners-block .splide__pagination__page{
     border: 1px solid #ccc !important;
   }
-
   .affinity-partners-block .fortysixty-button{
     align-self: center;
   }

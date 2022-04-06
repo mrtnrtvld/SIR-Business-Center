@@ -13,3 +13,18 @@ function toggleMenu() {
 
 menuToggle.addEventListener('click', toggleMenu);
 
+const filterHeaderCategories = document.querySelector('#filter-header-categories');
+const filterHeaderProducts  = document.querySelector('#filter-header-products');
+
+function toggleCategoriesFilter() {
+    document.querySelector('.product-categories').classList.toggle('product-categories--active');
+}
+
+filterHeaderCategories.addEventListener('click', toggleCategoriesFilter);
+
+function toggleProductsFilter() {
+    document.querySelector('.filter-products-box').classList.toggle('filter-products-box--active');
+}
+
+filterHeaderProducts.addEventListener('click', toggleProductsFilter);
+
