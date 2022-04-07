@@ -84,10 +84,12 @@
         <style>.product-grid{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 20px  
+                grid-gap: 20px;
+                padding: 0 14px;
+                margin: 30px 0 0 0;
             }
-            .product-grid h2{ color: var(--sir-white); font-size: 22px; margin: 0; width: 345px; padding: 20px; }
-            .product-grid h3{ color: var(--sir-black); background-color: var(--sir-header-blue-light); font-size: 18px; font-weight: 400; margin: 0; width: 345px; padding: 10px 20px; }
+            .product-grid h2{ box-sizing:border-box; color: var(--sir-white); font-size: 22px; margin: 0; width: 100%; padding: 12px 0  12px 30px; }
+            .product-grid h3{ box-sizing:border-box; color: var(--sir-black); background-color: var(--sir-header-blue-light); font-size: 18px; font-weight: 400; margin: 0; width: 100%; padding: 10px 12px; }
             .product-list{ 
                 list-style: none;
                 padding: 0;
@@ -100,7 +102,6 @@
             }
             @media only screen and (max-width: 1366px) {
               .product-list{ 
-                padding: 0 14px;
                 grid-gap: 14px;
                 order:2;
                 grid-column: 1/3;
@@ -117,22 +118,64 @@
                   height: 643px;
               }
             }
-            .product-filters{ width: 100%; order: 2; grid-column: 2/4;}
+            .product-filters{ width: 100%; order: 2; grid-column: 2/4; box-sizing: border-box;}
             @media only screen and (max-width: 1366px) {
                 .product-filters{order: -2; grid-column: 1/2;}
             }  
             .product-filters ul{
               list-style: none; padding: 0; margin: 0;
             }
-            #filter-header-products {cursor: default; background-color: var(--sir-green-light);}
+            #filter-header-products {cursor: default; background-color: var(--sir-green-light); margin-top:4px;}
             #filter-header-categories{cursor: default; background-color: var(--sir-header-blue);}
-            .product-categories, .filter-products-box{display: flex; flex-direction: column;}
+            .product-categories, .filter-products-box{display: flex; flex-direction: column; width: 100%;}
+            .product-category{width: 100%;}
+            .product-categories a{ padding: 10px 0 10px 30px; color: var(--sir-gray-dark); font-size: 18px; text-decoration: none; display: block; box-sizing: border-box;}
+            .product-categories a:hover{ color: var(--sir-white); background-color: var(--sir-header-blue); display: block; width: 100%;}
             @media only screen and (max-width: 1366px) {
               #filter-header-products {cursor: pointer;}
               #filter-header-categories{cursor: pointer;}
               .product-categories, .filter-products-box{display: none;} 
               .product-categories--active, .filter-products-box--active{display: flex; flex-direction: column;}
             } 
+            .filters > .filter-type:last-child{margin-bottom: 15px;}
+            .filter-type{margin:15px 0 0 30px; box-sizing: border-box; display: flex;}
+            .filters label{ margin-left:12px; color: var(--sir-blue); font-size: 18px; display: flex; align-items: center; text-transform: capitalize;}
+            
+            .filters input[type="checkbox"] {
+              -webkit-appearance: none;
+              appearance: none;
+              background-color: var(--sir-white);
+              /* Not removed via appearance */
+              margin: 0;
+              font: inherit;
+              color: var(--sir-black);
+              width: 24px;
+              height: 24px;
+              border: 1px solid var(--sir-gray-dark);
+              display: grid;
+              place-content: center;
+            }
+            .filters input[type="checkbox"]::before {
+              content: "";
+              width: 0.65em;
+              height: 0.65em;
+              clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+              transform: scale(0);
+              transform-origin: bottom left;
+              transition: 0ms transform ease-in-out;
+              box-shadow: inset 1em 1em var(--sir-gray-dark);
+              /* Windows High Contrast Mode */
+              background-color: var(--sir-white);
+            }
+            .filters input[type="checkbox"]:checked::before {
+              transform: scale(1);
+            }
+            .filters input[type="checkbox"]:disabled {
+              --form-control-color: var(--sir-gray-dark);
+              color: var(--sir-gray-dark);
+              cursor: not-allowed;
+            }
+           
             .product-pagination { order:-1; grid-column: 1/2; display: flex; justify-content: center;}
             @media only screen and (max-width: 1366px) {
                 .product-pagination{ order:-1; grid-column: 1/4;}
@@ -153,21 +196,21 @@
                 <div class="filter-products-box">
                   <h3>Poduct Type</h3>
                     <ul class="filters">
-                        <li class="filter-type">filter</li>
-                        <li class="filter-type">filter</li>
-                        <li class="filter-type">filter</li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
                     </ul>
                     <h3>Topic</h3>
                     <ul class="filters">
-                        <li class="filter-type">filter</li>
-                        <li class="filter-type">filter</li>
-                        <li class="filter-type">filter</li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
                     </ul>
                     <h3>Clinical Type</h3>
                     <ul class="filters">
-                        <li class="filter-type">filter</li>
-                        <li class="filter-type">filter</li>
-                        <li class="filter-type">filter</li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
+                        <li class="filter-type"><input type="checkbox" id="filter" name="filter" value="filter"><label for="filter">filter</label></li>
                     </ul>
                 </div>
                 
