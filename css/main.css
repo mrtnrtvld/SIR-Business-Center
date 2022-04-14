@@ -12,6 +12,7 @@
   --sir-header-blue: #026D9D;
   --sir-header-blue-light: #DAE7EF;
   --sir-gray-dark: #707070;
+  --sir-gray-light: #ebebeb;
   --sir-green-dark: #00757e;
   --sir-green-light: #00757e;
   --sir-black: #333333;
@@ -169,9 +170,15 @@ textarea {
      padding: 35px 0 70px 0;
      align-items: center;
    }
+   .searchandshop{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+   }
 
    .shopping-cart{
      cursor: pointer;
+     margin-left: 40px;
    }
 
    .hamburger{
