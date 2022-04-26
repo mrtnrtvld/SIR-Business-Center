@@ -81,7 +81,83 @@
         </nav>    
       </header>
     <content>
-      product-page.html
+      <style>
+        .product-page-grid{
+          display: grid;
+          grid-template-columns: 1fr 386px;
+          grid-gap: 20px;
+        }
+        .product-page-grid h2{font-size:28px; font-weight:400; text-transform: capitalize; color: var(--sir-blue);}
+        .ppg-details{grid-column: 1;}
+        .ppg-summary{grid-column: 2;}
+        .ppg-similar-products{grid-column: 1;}
+        .ppg-popular-bundles{grid-column:1;}
+        .ppg-popular-bundles ul, .ppg-similar-products ul{font-size: 22px; font-weight: 400; color: var(--sir-blue); list-style: none; padding: 0; margin: 0; display:flex; flex-direction: row;}
+        .ppg-popular-bundles img, .ppg-similar-products img{ object-fit: cover; }
+        @media only screen and (max-width: 1366px) {
+          .ppg-similar-products{grid-column: 1/3;}
+          .ppg-popular-bundles{grid-column:1/3;}
+        }
+        @media only screen and (max-width: 834px) {
+          .ppg-details{grid-column: 1/3;}
+          .ppg-summary{grid-column: 1/3;}
+          .ppg-popular-bundles, .ppg-similar-products{max-width: 834px; overflow: hidden;}
+          .ppg-mobile-overflow {max-width: 834px; overflow: scroll;}
+          .ppg-popular-bundles li, .ppg-similar-products li{margin-right:40px;}
+        }
+      </style>
+      <div class="product-page-grid">
+        <div class="ppg-details">
+          <h1>product title</h1>
+          <div class="ppg-image-box">
+            <div class="ppg-tag">tag</div>
+            <img src="/img/card-image.png" alt="product image">
+            <div class="ppg-image-picker">
+              <ul>
+                <li>image</li>
+                <li>image</li>
+                <li>image</li>
+              </ul>
+            </div>
+            <div class="ppg-description">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sint reiciendis cumque est debitis impedit ipsa ratione veritatis, eaque doloremque sed quaerat aliquid eius suscipit iusto ipsum possimus dolore necessitatibus!</p>
+              <ul>
+                <li>Retail price: $900</li>
+                <li>Member price: $1</li>
+                <li>Product format: ePub</li>
+                <li>Product type: customizable</li>
+              </ul>
+            </div>
+            <div class="ppg-details">
+              <h2>Item Details</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ppg-similar-products">
+          <h2>similar products</h2>
+          <div class="ppg-mobile-overflow">
+            <ul>
+              <li><img src="img/card-image.png" width="252px" height="130px">Product name</li>
+              <li><img src="img/card-image.png" width="252px" height="130px">Product name</li>
+              <li><img src="img/card-image.png" width="252px" height="130px">Product name</li>
+            </ul>
+            </div>
+          </h2>
+        </div>
+        <div class="ppg-popular-bundles">
+          <h2>included in popular bundles</h2>
+          <div class="ppg-mobile-overflow">
+          <ul>
+            <li><img src="img/card-image.png" width="252px" height="130px">Bundle name</li>
+            <li><img src="img/card-image.png" width="252px" height="130px">Bundle name</li>
+            <li><img src="img/card-image.png" width="252px" height="130px">Bundle name</li>
+          </ul>
+          </div>
+        </div>
+      </div>
     </content>
     <footer role="contentinfo">
       <div class="footer-left">
@@ -124,11 +200,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
-  <script>
-    new Splide( '#main-slider' ).mount();
-    new Splide( '#affinity-slider' ).mount();
-  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

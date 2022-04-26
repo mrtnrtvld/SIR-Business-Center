@@ -696,7 +696,7 @@ textarea {
   .pl-price{grid-column:1/2; grid-row:4; width: 242px; padding-left:10px; }
   .pl-member-price, .pl-non-member-price{ width: 100%; text-align: justify; text-justify:inter-word; text-transform: uppercase;  font-size: 18px; font-weight: 500; color: var(--sir-green-light); }
   .pl-buttons{ grid-column:2/3; grid-row:4;}
-  .pl-view-button, .pl-customize-button{width: 175px; height: 50px; display: flex; justify-content: center; align-items: center; font-size: 19px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;}
+  .pl-view-button, .pl-customize-button{ text-decoration:none; width: 175px; height: 50px; display: flex; justify-content: center; align-items: center; font-size: 19px; text-transform: uppercase; cursor: pointer; box-sizing: border-box;}
   .pl-view-button{  color: var(--sir-white); background-color: var(--sir-green-dark); border: none; }
   .pl-customize-button{ color:var(--sir-blue); border:2px solid var(--sir-blue); margin-top:8px; }
   .pl-utility-links{width: 100%; margin-top:10px;}
