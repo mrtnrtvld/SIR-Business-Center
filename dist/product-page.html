@@ -86,13 +86,26 @@
           grid-template-columns: 1fr 386px;
           grid-gap: 20px;
         }
-        .product-page-grid h2{font-size:28px; font-weight:400; text-transform: capitalize; color: var(--sir-blue);}
+        .product-page-grid h1{font-size:36px; font-weight:300; text-transform: capitalize; color: var(--sir-blue); line-height: 30px; padding:30px; margin: 0; background-color: var(--sir-green-dark);}
+        .product-page-grid ul{list-style: none; margin: 0; padding: 0;}
         .ppg-details{grid-column: 1;}
-        .ppg-summary{grid-column: 2;}
-        .ppg-similar-products{grid-column: 1;}
+        .ppg-details h1{font-size:28px; font-weight:400;  background-color: var(--sir-green-dark); color: var(--sir-white); line-height: 0px;}
+        .ppg-summary{grid-column: 2; border:1px solid var(--sir-green-dark); height: fit-content;}
+        .ppg-summary h2{ font-size: 22px; color: var(--sir-white); background-color: var(--sir-green-dark); line-height: 0; margin: 0; padding: 20px;}
+        .ppg-summary ul:nth-child(2){padding: 20px; position: relative;}
+        .ppg-summary ul:nth-child(2)::after{ content: ""; background-color: var(--sir-green-dark); height: 1px; width: 100%; position:absolute; bottom:0; left: 0;}
+        .ppg-summary ul:nth-child(2) span{display: inline-block; width: 130px;}
+        
+        .ppg-summary ul:nth-child(3){padding: 20px 20px 0 20px;}
+        .ppg-summary ul:nth-child(3) li{ display: block; color: var(--sir-header-blue); padding: 20px; border:2px solid var(--sir-header-blue); text-align: center; text-transform: uppercase; font-size:19px; margin-bottom:10px; cursor: pointer; }
+        .ppg-summary ul:nth-child(3) li:hover{ color: var(--sir-white); background-color: var(--sir-green-dark); border-color: var(--sir-green-dark); font-size:19px; margin-bottom:10px; cursor: pointer; }
+        .ppg-summary div:nth-child(4){width: 100%; text-align: center;}
+        .ppg-summary div:nth-child(5){width: 100%; text-align: center; margin-bottom: 20px;}
+        .ppg-similar-products{grid-column: 1; border-bottom:1px solid var(--sir-blue); padding-bottom:30px;}
         .ppg-popular-bundles{grid-column:1;}
-        .ppg-popular-bundles ul, .ppg-similar-products ul{font-size: 22px; font-weight: 400; color: var(--sir-blue); list-style: none; padding: 0; margin: 0; display:flex; flex-direction: row;}
-        .ppg-popular-bundles img, .ppg-similar-products img{ object-fit: cover; }
+        .ppg-popular-bundles ul, .ppg-similar-products ul{font-size: 22px; font-weight: 400; color: var(--sir-blue); list-style: none; padding: 0; margin: 0; display:flex; flex-direction: row; justify-content: space-between;}
+        .ppg-popular-bundles li, .ppg-similar-products li{ display: flex; flex-direction: column;}
+        .ppg-popular-bundles img, .ppg-similar-products img{ object-fit: cover; margin-bottom:10px; }
         @media only screen and (max-width: 1366px) {
           .ppg-similar-products{grid-column: 1/3;}
           .ppg-popular-bundles{grid-column:1/3;}
@@ -133,6 +146,21 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
             </div>
           </div>
+        </div>
+        <div class="ppg-summary">
+          <h2>Summary</h2>
+          <ul>
+            <li><span>Member:</span>$900</li>
+            <li><span>Non-member:</span>$950</li>
+          </ul>
+          <ul>
+            <li>add to cart</li>
+            <li>view cart</li>
+            <li>save for later</li>
+            <li>check out</li>
+          </ul>
+          <div>member savings: $900</div>
+          <div>(Become a Member)</div>
         </div>
         <div class="ppg-similar-products">
           <h2>similar products</h2>
