@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SIR Business Center</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon.png">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css">
+</head>
+
+<body class="scrollable"> 
+    <header role="banner">
+        <div class="logo-box">
+          <div class="logo" role="contentinfo">
+            <a href="index.html"><img src="/img/sir-bc-logo.svg" alt="SIR Business Center Logo"></a> 
+          </div>
+          <div class="search" role="search">
+            <div class="search-form">
+              <div class="form-group has-feedback">
+                  <form id="header-search-form" action="/special-pages/search/" method="get">
+                      <input id="searchInput" type="text" class="form-control" placeholder="Search" name="q">
+                      <span class="searchclear" style="display: none;"></span>
+                      <button id="collapse" class="search-btn form-control-feedback" aria-label="Search Button">
+                          <i><img src="/img/search-button.svg" alt="search button"></i>
+                      </button>
+                  </form>
+              </div>
+          </div>
+          </div>
+          <div class="shopping-cart" role="button">
+            <img src="/img/shopping-cart.svg" alt="Shopping Cart">
+          </div>
+        </div>
+        <nav role="navigation" class="hamburger">
+          <img width="30px" height="30px" src="/img/hamburger.svg" alt="Hamburger Menu" class="hamburger-open">
+          <img width="20px" height="20px" style="padding:5px;"src="/img/hamburger-cross.svg" alt="Close the menu" class="hamburger-close">
+        </nav>
+        <nav role="navigation" class="main-menu">
+          <div class="nav-product-categories">
+            <span class="nav-product-categories-title">Product categories</span>
+            <ul role="menu">
+              <li role="menuitem"><a href="category-page.html">Patient engagement & education</a></li>
+              <li role="menuitem"><a href="category-page.html">Brand & Marketing</a></li>
+              <li role="menuitem"><a href="category-page.html">Coding, billing & reimbursement</a></li>
+              <li role="menuitem"><a href="category-page.html">Private practice operations & management</a></li>
+              <li role="menuitem"><a href="category-page.html">Setting Up an IR Private Practice</a></li>
+              <li role="menuitem"><a href="category-page.html">Electronic health records</a></li>
+            </ul>
+          </div>
+          <div class="nav-utility-links">
+            <ul>
+              <li>affinity partners</li>
+              <li>Partnership Directory</li>
+              <li>Become a Partner</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Sirweb.org</li>
+            </ul>
+          </div>
+        </nav>    
+      </header>
+    <content>
+      <div class="breadcrumb" role="navigation">breadcrumb</div>
+      custom-product-page
+    </content>
+    <footer role="contentinfo">
+      <div class="footer-left">
+        <div>
+          Society of Interventional Radiology<br/>
+          3975 Fair Ridge Drive • Suite 400 North • Fairfax, Virginia 22033<br/>
+          (703) 691-1805  • Fax (703) 691-1855
+        </div>
+        <div role="menu">
+          <a role="menuitem" href="#">Terms of Use</a>
+          <a role="menuitem" href="#">Privacy Policy</a>
+          <a role="menuitem" href="#">Content, Links and Copyright</a>
+          <a role="menuitem" href="#">Advertise</a>
+        </div>
+        <div>
+          <img src="/img/sir-logo-white.svg" alt="SIR logo">
+        </div>
+        <div>TRANSLATE</div>
+        <div>© 2021 The Society of Interventional Radiology. All rights reserved.</div>
+      </div>
+      
+      <div class="footer-product-types" role="menu">
+        <p>PRODUCT TYPES</p>
+        <ul>
+          <li role="menuitem"><a href="#">Discharge Summaries</a></li>
+          <li role="menuitem"><a href="#">Operations Toolkits</a></li>
+          <li role="menuitem"><a href="#">Marketing Toolkits</a></li>
+          <li role="menuitem"><a href="#">Staffing Toolkits</a></li>
+          <li role="menuitem"><a href="#">Equipment Booklet</a></li>
+          <li role="menuitem"><a href="#">Coding Guidances</a></li>
+          <li role="menuitem"><a href="#">Reimbursement & Claims Templates</a></li>
+          <li role="menuitem"><a href="#">Revenue Cycle Management Audit</a></li>
+          <li role="menuitem"><a href="#">Facilities Guidelines</a></li>
+          <li role="menuitem"><a href="#">EHR Medical Templates</a></li>
+          <li role="menuitem"><a href="#">Informed Consent Forms</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
