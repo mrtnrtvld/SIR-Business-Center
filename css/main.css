@@ -24,6 +24,7 @@ html {
   font-size: 1rem;
   line-height: 1.4;
   font-family: var(--font-main);
+  overflow-x: hidden;
 }
 
 /*
@@ -305,6 +306,15 @@ textarea {
     top: 0;
     left: 0;
    }
+   .breadcrumb::before{
+    content: "";
+    left: calc(((100vw - 834px)/2) * -1);
+    width: calc((100vw - 834px)/2);
+    height: 100%;
+    background-color: var(--sir-blue);
+    position: absolute;
+    display:flex;
+  }
    .breadcrumb::after{
      content:"";
      height: 70px;
@@ -534,6 +544,30 @@ textarea {
     flex-direction: row;
     margin-top: 70px;
     box-sizing: border-box;
+    position: relative;
+  }
+  footer::before{
+    content: '';
+    display: flex;
+    align-self: center;
+    left: calc(((100vw - 834px)/2) * -1);
+    width: calc((100vw - 834px)/2);
+    background-color: var(--sir-green-dark);
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  footer::after{
+    content: '';
+    display: flex;
+    align-self: center;
+    right: calc(((100vw - 834px)/2) * -1);
+    width: calc((100vw - 834px)/2);
+    background-color: var(--sir-green-dark);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1;
   }
   footer a, footer a:visited, footer a:active{
     color: var(--sir-white);
