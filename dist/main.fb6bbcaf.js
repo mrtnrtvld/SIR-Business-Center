@@ -123,12 +123,14 @@ var mainMenu = document.querySelector('.main-menu');
 var scrollState = document.querySelector('.scrollable');
 var hamburgerOpen = document.querySelector('.hamburger-open');
 var hamburgerClose = document.querySelector('.hamburger-close');
+var contentBox = document.querySelector('#content-box');
 
 function toggleMenu() {
   scrollState.classList.toggle('disable-scroll');
   mainMenu.classList.toggle('main-menu--active');
   hamburgerOpen.classList.toggle('hamburger-open--active');
   hamburgerClose.classList.toggle('hamburger-close--active');
+  contentBox.classList.toggle('content-cover--active');
 }
 
 menuToggle.addEventListener('click', toggleMenu);
@@ -139,13 +141,17 @@ function toggleCategoriesFilter() {
   document.querySelector('.product-categories').classList.toggle('product-categories--active');
 }
 
-filterHeaderCategories.addEventListener('click', toggleCategoriesFilter);
+if (filterHeaderCategories) {
+  filterHeaderCategories.addEventListener('click', toggleCategoriesFilter);
+}
 
 function toggleProductsFilter() {
   document.querySelector('.filter-products-box').classList.toggle('filter-products-box--active');
 }
 
-filterHeaderProducts.addEventListener('click', toggleProductsFilter);
+if (filterHeaderProducts) {
+  filterHeaderProducts.addEventListener('click', toggleProductsFilter);
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

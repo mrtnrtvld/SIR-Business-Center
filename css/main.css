@@ -24,7 +24,6 @@ html {
   font-size: 1rem;
   line-height: 1.4;
   font-family: var(--font-main);
-  overflow-x: hidden;
 }
 
 /*
@@ -102,6 +101,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
    }
 
   .disable-scroll{
@@ -217,6 +217,28 @@ textarea {
     color: var(--sir-blue);
     padding: 30px 0 146px 0;
   }
+  .main-menu--active::before{
+    content: '';
+    display: flex;
+    align-self: center;
+    left: calc(((100vw - 834px)/2) * -1);
+    width: calc((100vw - 834px)/2);
+    background-color: white;
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  .main-menu--active::after{
+    content: '';
+    display: flex;
+    align-self: center;
+    right: calc(((100vw - 834px)/2) * -1);
+    width: calc((100vw - 834px)/2);
+    background-color: white;
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
 
    .nav-product-categories{
      padding-right:53px;
@@ -276,6 +298,20 @@ textarea {
    /*==============
     Content Styles
     ==============*/
+
+    .content-cover--active{
+      position: relative;
+    }
+
+    .content-cover--active:before{
+      content: "";
+      position: absolute;
+      left: calc(((100vw - 834px)/2) * -1);
+      width: calc((100vw + 834px));
+      height: 100vh;
+      background-color: #333333b1;
+      z-index: 3;
+    }
 
    .homepage-slider-element{
      height: 380px;
@@ -919,8 +955,10 @@ textarea {
 
   .main-menu{
     top: 0;
-    padding: 80px 0 60px 0;
+    padding: 0 0 60px 0;
+    position: relative;
   }
+  
 
   .breadcrumb{
     position: relative;
@@ -995,7 +1033,7 @@ textarea {
 
   .main-menu--active{
     flex-direction: column;
-    padding: 80px 10px 60px 30px;
+    padding: 0 10px 60px 30px;
     box-sizing: border-box;
   }
 
