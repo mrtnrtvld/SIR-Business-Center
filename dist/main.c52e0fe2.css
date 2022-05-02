@@ -17,6 +17,12 @@
   --sir-green-light: #00757e;
   --sir-black: #333333;
   --sir-white: #F6F6F5;
+  --sir-card-green: 110, 157, 0;
+  --sir-card-purple:78, 30, 87;
+  --sir-card-teal:0, 140, 149;
+  --sir-card-wine:117, 15, 50;
+  --sir-card-blue-light:2, 109, 157;
+  --sir-card-blue-dark:52, 100, 127;
 }
 
 html {
@@ -438,12 +444,29 @@ textarea {
     align-items: flex-end;
     position: relative;
   }
+  .card:nth-child(2) .card-content-box{
+    background-color: rgba(var(--sir-card-green), 0.9);
+  }
+  .card:nth-child(3) .card-content-box{
+    background-color: rgba(var(--sir-card-purple), 0.9);
+  }
+  .card:nth-child(4) .card-content-box{
+    background-color: rgba(var(--sir-card-teal), 0.9);
+  }
+  .card:nth-child(5) .card-content-box{
+    background-color: rgba(var(--sir-card-wine), 0.9);
+  }
+  .card:nth-child(6) .card-content-box{
+    background-color: rgba(var(--sir-card-blue-light), 0.9);
+  }
   .card img{
-    width: 100%
+    height: 340px;
+    width: 442px;
+    object-fit: cover;
   }
   .card-content-box{ 
     position: absolute;
-    background-color: #00818ac5;
+    background-color: rgba(var(--sir-card-blue-dark), 0.8);
     width: 100%;
     height: 170px;
   }
@@ -1005,6 +1028,11 @@ textarea {
   .card{
     height: 312px;
   }
+  .card img{
+    width: 407px;
+    height: 312px;
+    object-fit: cover;
+  }
 
   .affinity-partners-block .splide__slide img{
     width: 180px;
@@ -1097,6 +1125,8 @@ textarea {
     grid-gap: 0;
   }
   .card img{
+    width: 390px;
+    height: 170px;
     object-fit: cover;
     object-position: top;
   }
