@@ -269,12 +269,13 @@ textarea {
      padding: 5px 0;
    }
 
-   .nav-product-categories a, .nav-product-categories a:visited, .nav-product-categories a:active{
+   .nav-product-categories a, .nav-product-categories a:visited, .nav-product-categories a:active,
+   .nav-utility-links a, .nav-utility-links a:visited, .nav-utility-links a:active{
     color: var(--sir-blue);
     text-decoration: none;
   }
 
-  .nav-product-categories a:hover{
+  .nav-product-categories a:hover, .nav-utility-links a:hover{
     color: var(--sir-lime);
   }
 
@@ -386,6 +387,18 @@ textarea {
      overflow-wrap: break-word;
      top: 70px;
      z-index: 2;
+   }
+
+  .content h1{
+     color: var(--sir-blue);
+   }
+
+   .content ul{
+     margin: 16px; padding: 0;
+   }
+
+   .content li{
+     margin: 8px 0 0 0;
    }
 
    .slider{
@@ -597,7 +610,7 @@ textarea {
     background-color: var(--sir-green-dark);
     color: var(--sir-white);
     font-weight: 400;
-    padding: 36px;
+    padding: 36px 0;
     padding-bottom:0;
     display: flex;
     flex-direction: row;
@@ -1162,7 +1175,12 @@ textarea {
     flex-direction: column;
     padding: 0;
   }
+  footer{
+    padding: 36px;
+  }
 }
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
