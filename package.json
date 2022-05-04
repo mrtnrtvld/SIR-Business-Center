@@ -12,9 +12,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@parcel/packager-raw-url": "^2.5.0",
+    "@parcel/resolver-glob": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.5.0",
+    "autoprefixer": "^10.4.7",
+    "parcel@nightly": "2.5.0-nightly.2703",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "@splidejs/splide": "^3.6.12"
+    "@splidejs/splide": "^3.6.12",
+    "parcel": "^2.5.0-nightly.2703"
   }
 }
