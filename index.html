@@ -25,163 +25,164 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mod.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css">
 </head>
 
 <body class="scrollable"> 
-    <header role="banner">
-      <div class="logo-box">
-        <div class="logo" role="contentinfo">
-         <a href="index.html"><img src="/img/sir-bc-logo.svg" alt="SIR Business Center Logo"></a> 
-        </div>
-        <div class="searchandshop">
-          <div class="search" role="search">
-            <div class="search-form">
-              <div class="form-group has-feedback">
-                  <form id="header-search-form" action="/special-pages/search/" method="get">
-                      <input id="searchInput" type="text" class="form-control" placeholder="Search" name="q">
-                      <span class="searchclear" style="display: none;"></span>
-                      <button id="collapse" class="search-btn form-control-feedback" aria-label="Search Button">
-                          <i><img src="/img/search-button.svg" alt="search button"></i>
-                      </button>
-                  </form>
-              </div>
-          </div>
-          </div>
-          <div class="shopping-cart" role="button">
-            <img src="/img/shopping-cart.svg" alt="Shopping Cart">
+  <header role="banner">
+    <div class="logo-box">
+      <div class="logo" role="contentinfo">
+       <a href="index.html"><img src="/img/sir-bc-logo.svg" alt="SIR Business Center Logo"></a> 
+     </div>
+     <div class="searchandshop">
+      <div class="search" role="search">
+        <div class="search-form">
+          <div class="form-group has-feedback">
+            <form id="header-search-form" action="/special-pages/search/" method="get">
+              <input id="searchInput" type="text" class="form-control" placeholder="Search" name="q">
+              <span class="searchclear" style="display: none;"></span>
+              <button id="collapse" class="search-btn form-control-feedback" aria-label="Search Button">
+                <i><img src="/img/search-button.svg" alt="search button"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
-      <nav role="navigation" class="hamburger">
-        <img width="30px" height="30px" src="/img/hamburger.svg" alt="Hamburger Menu" class="hamburger-open">
-        <img width="20px" height="20px" style="padding:5px;"src="/img/hamburger-cross.svg" alt="Close the menu" class="hamburger-close">
-      </nav>
-      <nav role="navigation" class="main-menu">
-        <div class="nav-product-categories">
-          <span class="nav-product-categories-title">Product categories</span>
-          <ul role="menu">
-            <li role="menuitem"><a href="category-page.html">Patient engagement & education</a></li>
-            <li role="menuitem"><a href="category-page.html">Brand & Marketing</a></li>
-            <li role="menuitem"><a href="category-page.html">Coding, billing & reimbursement</a></li>
-            <li role="menuitem"><a href="category-page.html">Private practice operations & management</a></li>
-            <li role="menuitem"><a href="category-page.html">Setting Up an IR Private Practice</a></li>
-            <li role="menuitem"><a href="category-page.html">Electronic health records</a></li>
-          </ul>
-        </div>
-        <div class="nav-utility-links">
-          <ul>
-            <li><a href="#">affinity partners</a></li>
-            <li><a href="#">Partnership Directory</a></li>
-            <li><a href="#">Become a Partner</a></li>
-            <li><a href="about-page.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sirweb.org</a></li>
-          </ul>
-        </div>
-      </nav>    
-    </header>
-    <content id="content-box" class="content">
-      <div class="homepage-slider-element">
-        <div class="breadcrumb breadcrumb--frontpage" role="navigation">breadcrumb</div>
-        <div class="statement-box"><p>An online marketplace for IRs, a platform that connects stakeholders to obtain key resources, buy services/products via an e-commerce platform.</p></div>
-        <div class="slider" id="main-slider" data-splide='{"type":"loop"}'>
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <picture>
-                    <source 
-                    media="(max-width: 834px)"
-                    srcset="/img/slide-1-mobile.png">
-                    <source srcset="/img/slide-1.png">
-                    <img src="/img/slide-1.png" alt="slide-1">
-                  </picture>
-                 </li>
-                 <li class="splide__slide">
-                  <picture>
-                    <source 
-                    media="(max-width: 834px)"
-                    srcset="/img/slide-1-mobile.png">
-                    <source srcset="/img/slide-1.png">
-                    <img src="/img/slide-2.png" alt="slide-2">
-                  </picture>
-                 </li>
-              </ul>
+      <div class="shopping-cart" role="button">
+        <img src="/img/shopping-cart.svg" alt="Shopping Cart">
+      </div>
+    </div>
+  </div>
+  <nav role="navigation" class="hamburger">
+    <img width="30px" height="30px" src="/img/hamburger.svg" alt="Hamburger Menu" class="hamburger-open">
+    <img width="20px" height="20px" style="padding:5px;"src="/img/hamburger-cross.svg" alt="Close the menu" class="hamburger-close">
+  </nav>
+  <nav role="navigation" class="main-menu">
+    <div class="nav-product-categories">
+      <span class="nav-product-categories-title">Product categories</span>
+      <ul role="menu">
+        <li role="menuitem"><a href="category-page.html">Patient engagement & education</a></li>
+        <li role="menuitem"><a href="category-page.html">Brand & Marketing</a></li>
+        <li role="menuitem"><a href="category-page.html">Coding, billing & reimbursement</a></li>
+        <li role="menuitem"><a href="category-page.html">Private practice operations & management</a></li>
+        <li role="menuitem"><a href="category-page.html">Setting Up an IR Private Practice</a></li>
+        <li role="menuitem"><a href="category-page.html">Electronic health records</a></li>
+      </ul>
+    </div>
+    <div class="nav-utility-links">
+      <ul>
+        <li>affinity partners</li>
+        <li>Partnership Directory</li>
+        <li>Become a Partner</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Sirweb.org</li>
+      </ul>
+    </div>
+  </nav>    
+</header>
+<content>
+  <div class="homepage-slider-element">
+    <div class="breadcrumb breadcrumb--frontpage" role="navigation">breadcrumb</div>
+    <div class="statement-box"><p>An online marketplace for IRs, a platform that connects stakeholders to obtain key resources, buy services/products via an e-commerce platform.</p></div>
+    <div class="slider" id="main-slider" data-splide='{"type":"loop"}'>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <picture>
+              <source 
+              media="(max-width: 834px)"
+              srcset="/img/slide-1-mobile.png">
+              <source srcset="/img/slide-1.png">
+                <img src="/img/slide-1.png" alt="slide-1">
+              </picture>
+            </li>
+            <li class="splide__slide">
+              <picture>
+                <source 
+                media="(max-width: 834px)"
+                srcset="/img/slide-1-mobile.png">
+                <source srcset="/img/slide-1.png">
+                  <img src="/img/slide-2.png" alt="slide-2">
+                </picture>
+              </li>
+            </ul>
           </div>  
         </div>
       </div>
-        <div class="card-grid">
-            <div class="card card-one" role="button">
-              <img src="/img/card-image.png" alt="card-image">
-              <div class="card-content-box">
-                <div class="card-content">
-                  <div id="card-number">1</div>
-                  <h2>Card Title</h2>
-                </div>
-              </div>
+      <div class="card-grid">
+        <div class="card card-one" role="button">
+          <img src="/img/card-image.png" alt="card-image">
+          <div class="card-content-box">
+            <div class="card-content">
+              <div id="card-number">1</div>
+              <h2>Card Title</h2>
             </div>
-            <div class="card card-two">
-              <img src="/img/card-image.png" alt="card-image">
-              <div class="card-content-box">
-                <div class="card-content">
-                  <div id="card-number">1</div>
-                  <h2>Card Title</h2>
-                </div>
-              </div>
-            </div>
-            <div class="card card-three">
-              <img src="/img/card-image.png" alt="card-image">
-              <div class="card-content-box">
-                <div class="card-content">
-                  <div id="card-number">1</div>
-                  <h2>Card Title</h2>
-                </div>
-              </div>
-            </div>
-            <div class="card card-four">
-              <img src="/img/card-image.png" alt="card-image">
-              <div class="card-content-box">
-                <div class="card-content">
-                  <div id="card-number">1</div>
-                  <h2>Card Title</h2>
-                </div>
-              </div>
-            </div>
-            <div class="card card-five">
-              <img src="/img/card-image.png" alt="card-image">
-              <div class="card-content-box">
-                <div class="card-content">
-                  <div id="card-number">1</div>
-                  <h2>Card Title</h2>
-                </div>
-              </div>
-            </div>
-            <div class="card card-six">
-              <img src="/img/card-image.png" alt="card-image">
-              <div class="card-content-box">
-                <div class="card-content">
-                  <div id="card-number">1</div>
-                  <h2>Card Title</h2>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="fortysixty">
-            <img src="/img/card-image.png" alt="image of two women">
-            <div class="fortysixty-content">
-              <h2>Title</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis et suscipit corporis! Sint neque expedita praesentium, velit eos sit quos ex tempora accusamus minus odio, temporibus beatae mollitia quam?</p>
-              <div class="fortysixty-button" role="button">View Products</div>
-            </div>
-        </div>
-        <div class="fortysixty reverse">
-          <img src="/img/card-image.png" alt="image of two women">
-          <div class="fortysixty-content">
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis et suscipit corporis! Sint neque expedita praesentium, velit eos sit quos ex tempora accusamus minus odio, temporibus beatae mollitia quam?</p>
-            <div class="fortysixty-button" role="button">View Products</div>
           </div>
+        </div>
+        <div class="card card-two">
+          <img src="/img/card-image.png" alt="card-image">
+          <div class="card-content-box">
+            <div class="card-content">
+              <div id="card-number">1</div>
+              <h2>Card Title</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card card-three">
+          <img src="/img/card-image.png" alt="card-image">
+          <div class="card-content-box">
+            <div class="card-content">
+              <div id="card-number">1</div>
+              <h2>Card Title</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card card-four">
+          <img src="/img/card-image.png" alt="card-image">
+          <div class="card-content-box">
+            <div class="card-content">
+              <div id="card-number">1</div>
+              <h2>Card Title</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card card-five">
+          <img src="/img/card-image.png" alt="card-image">
+          <div class="card-content-box">
+            <div class="card-content">
+              <div id="card-number">1</div>
+              <h2>Card Title</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card card-six">
+          <img src="/img/card-image.png" alt="card-image">
+          <div class="card-content-box">
+            <div class="card-content">
+              <div id="card-number">1</div>
+              <h2>Card Title</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fortysixty">
+        <img src="/img/card-image.png" alt="image of two women">
+        <div class="fortysixty-content">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis et suscipit corporis! Sint neque expedita praesentium, velit eos sit quos ex tempora accusamus minus odio, temporibus beatae mollitia quam?</p>
+          <div class="fortysixty-button" role="button">View Products</div>
+        </div>
+      </div>
+      <div class="fortysixty reverse">
+        <img src="/img/card-image.png" alt="image of two women">
+        <div class="fortysixty-content">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis et suscipit corporis! Sint neque expedita praesentium, velit eos sit quos ex tempora accusamus minus odio, temporibus beatae mollitia quam?</p>
+          <div class="fortysixty-button" role="button">View Products</div>
+        </div>
       </div>
 
       <div class="affinity-partners-block">
@@ -210,7 +211,7 @@
         </div>
         <div class="fortysixty-button" role="button">Learn More</div>
       </div>
-        
+      
     </content>
     <footer role="contentinfo">
       <div class="footer-left">
@@ -250,21 +251,21 @@
       </div>
     </footer>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
-  <script>
-    new Splide( '#main-slider' ).mount();
-    new Splide( '#affinity-slider' ).mount();
-  </script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
+    <script>
+      new Splide( '#main-slider' ).mount();
+      new Splide( '#affinity-slider' ).mount();
+    </script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 
-</html>
+  </html>
