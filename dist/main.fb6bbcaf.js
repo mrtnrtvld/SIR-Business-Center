@@ -123,14 +123,12 @@ var mainMenu = document.querySelector('.main-menu');
 var scrollState = document.querySelector('.scrollable');
 var hamburgerOpen = document.querySelector('.hamburger-open');
 var hamburgerClose = document.querySelector('.hamburger-close');
-var contentBox = document.querySelector('#content-box');
 
 function toggleMenu() {
   scrollState.classList.toggle('disable-scroll');
   mainMenu.classList.toggle('main-menu--active');
   hamburgerOpen.classList.toggle('hamburger-open--active');
   hamburgerClose.classList.toggle('hamburger-close--active');
-  contentBox.classList.toggle('content-cover--active');
 }
 
 menuToggle.addEventListener('click', toggleMenu);
@@ -141,17 +139,13 @@ function toggleCategoriesFilter() {
   document.querySelector('.product-categories').classList.toggle('product-categories--active');
 }
 
-if (filterHeaderCategories) {
-  filterHeaderCategories.addEventListener('click', toggleCategoriesFilter);
-}
+filterHeaderCategories.addEventListener('click', toggleCategoriesFilter);
 
 function toggleProductsFilter() {
   document.querySelector('.filter-products-box').classList.toggle('filter-products-box--active');
 }
 
-if (filterHeaderProducts) {
-  filterHeaderProducts.addEventListener('click', toggleProductsFilter);
-}
+filterHeaderProducts.addEventListener('click', toggleProductsFilter);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -180,7 +174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52987" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64043" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

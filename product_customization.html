@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SIR Business Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        .nw h1, 
+        .nw h2, 
+        .nw h3, 
+        .nw h4, 
+        .nw h5, 
+        .nw h6, 
+        .nw ul, 
+        .nw li,
+        .nw p {
+            margin: 0px;padding: 0px;list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mod.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css">
+</head>
+
+<body class="scrollable"> 
+    <header role="banner">
+        <div class="logo-box">
+            <div class="logo" role="contentinfo">
+                <a href="index.html"><img src="/img/sir-bc-logo.svg" alt="SIR Business Center Logo"></a> 
+            </div>
+            <div class="search" role="search">
+                <div class="search-form">
+                  <div class="form-group has-feedback">
+                    <form id="header-search-form" action="/special-pages/search/" method="get">
+                      <input id="searchInput" type="text" class="form-control" placeholder="Search" name="q">
+                      <span class="searchclear" style="display: none;"></span>
+                      <button id="collapse" class="search-btn form-control-feedback" aria-label="Search Button">
+                        <i><img src="/img/search-button.svg" alt="search button"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="shopping-cart" role="button">
+        <img src="/img/shopping-cart.svg" alt="Shopping Cart">
+    </div>
+</div>
+<nav role="navigation" class="hamburger">
+    <img width="30px" height="30px" src="/img/hamburger.svg" alt="Hamburger Menu" class="hamburger-open">
+    <img width="20px" height="20px" style="padding:5px;"src="/img/hamburger-cross.svg" alt="Close the menu" class="hamburger-close">
+</nav>
+<nav role="navigation" class="main-menu">
+    <div class="nav-product-categories">
+        <span class="nav-product-categories-title">Product categories</span>
+        <ul role="menu">
+          <li role="menuitem"><a href="category-page.html">Patient engagement & education</a></li>
+          <li role="menuitem"><a href="category-page.html">Brand & Marketing</a></li>
+          <li role="menuitem"><a href="category-page.html">Coding, billing & reimbursement</a></li>
+          <li role="menuitem"><a href="category-page.html">Private practice operations & management</a></li>
+          <li role="menuitem"><a href="category-page.html">Setting Up an IR Private Practice</a></li>
+          <li role="menuitem"><a href="category-page.html">Electronic health records</a></li>
+      </ul>
+  </div>
+  <div class="nav-utility-links">
+    <ul>
+      <li>affinity partners</li>
+      <li>Partnership Directory</li>
+      <li>Become a Partner</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Sirweb.org</li>
+  </ul>
+</div>
+</nav>    
+</header>
+
+<content>
+    <div class="breadcrumb" role="navigation">breadcrumb</div>
+
+    <main class="mt-[30px] nw">
+        <div class="flex gap-5">
+            <div class="left flex-1">
+                <div class="leftTitle bg-sir-green-dark text-white px-8 py-6 flex flex-col mb-5">
+                    <span class="leading-none uppercase">Brochure</span>
+                    <h1 class="font-light">Interventional Radiology & Women’s Health</h1>
+                </div>
+
+                <div class="formTitle mb-10">
+                    <h2 class="text-2.5xl text-sir-green-dark font-normal !mb-3">Product Customization</h2>
+                    <span class="block text-lg text-sir-black">FPO Fill in the fields below to customize your product and generate a preview before purchase.</span>
+                </div>
+
+                <form action="#">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col">
+                            <label class="text-1.5xl text-sir-green-dark mb-1">Practice Name</label>
+                            <input type="text" class="outline-none placeholder:text-sir-black text-lg px-5 h-12 border border-sir-green-dark" placeholder="FPO Practice Name">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label class="text-1.5xl text-sir-green-dark mb-1">Practice URL</label>
+                            <input type="text" class="outline-none placeholder:text-sir-black text-lg px-5 h-12 border border-sir-green-dark" placeholder="FPO Practice URL">
+                        </div>
+
+                        <div class="flex gap-5">
+                            <div class="flex flex-col flex-1">
+                                <label class="text-1.5xl text-sir-green-dark mb-1">Practice Email</label>
+                                <input type="text" class="outline-none placeholder:text-sir-black text-lg px-5 h-12 border border-sir-green-dark" placeholder="fpo-email@FPO.com">
+                            </div>    
+
+                            <div class="flex flex-col flex-1">
+                                <label class="text-1.5xl text-sir-green-dark mb-1">Practice Phone Number</label>
+                                <input type="text" class="outline-none placeholder:text-sir-black text-lg px-5 h-12 border border-sir-green-dark" placeholder="(XXX) XXX-XXXX">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label class="text-1.5xl text-sir-green-dark mb-1">Practice Address</label>
+                            <input type="text" class="outline-none placeholder:text-sir-black text-lg px-5 h-12 border border-sir-green-dark" placeholder="FPO Practice Address">
+                        </div>
+
+                        <div class="flex flex-col w-[468px]">
+                            <label class="text-1.5xl text-sir-green-dark mb-1">Hours of Operation</label>
+                            <input type="text" class="outline-none placeholder:text-sir-black text-lg px-5 h-12 border border-sir-green-dark" placeholder="FPO 9PM - 5PM">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label class="text-1.5xl text-sir-green-dark mb-1">Practice Logo</label>
+
+                            <div class="flex items-center space-x-[176px] h-[125px] items-end">
+                                <div class="flex flex-col relative top-6">
+                                    <label class="relative">
+                                        <span class="absolute text-xs text-sir-black -right-2 transform translate-x-full top-1/2 -translate-y-1/2">FPO_Filename.jpg</span>
+                                        <span class="inline-flex h-[44px] bg-white border-2 border-solid border-sir header-blue uppercase px-12 text-sir-header-blue flex items-center justify-center">Browse</span>
+                                        <input type="file" class="block file:px-10 file:text-base file:uppercase file:text-sir-header-blue file:bg-white filess:border-none file:outline-sir-header-blue file:mr-0 text-xs text-sir-black file:h-[44px] file:border-sir-header-blue file:appearance-none hidden">
+                                    </label>
+                                    <small class="max-w-[168px] mt-3 block text-sir-header-blue">FPO Supported file types: SVG, PNG, JPG, EPS</small>
+                                </div>
+                                <img src="images/uploaded-logo.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="pt-8">
+                            <button class="text-[19px] h-12 px-6 bg-sir-header-blue inline-flex items-center justify-center text-white uppercase appearance-none border-0 outline-dotted outline-2 outline-offset-2 outline-sir-header-blue">Generate preview</button>
+                            <span class="text-sm font-semibold block mt-4"><sup class="text-sir-red font-semibold">*</sup>All Fields Required</span>
+                        </div>
+
+                        <div><a href="#" class="text-1.5xl text-sir-header-blue font-regular">Back to Product Category</a></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="right w-[384px]">
+                <div class="border border-solid border-sir-green-dark">
+                    <div class="top h-[52px] text-1.5xl text-white px-5 bg-sir-green-dark flex items-center">
+                        Preview
+                    </div>
+                    <div class="bottom p-5">
+                        <div class="flex items-center justify-center">
+                            <img src="images/preview-area.jpg" alt="">
+                        </div>
+
+                        <div class="button-list mt-14 flex flex-col gap-[10px]">
+                            <a href="#" class="h-[68px] text-white text-[19px] uppercase flex items-center justify-center bg-sir-green-dark no-underline">Add to Cart</a>
+
+                            <a href="#" class="h-[68px] text-[19px] uppercase flex items-center justify-center text-sir-header-blue border-2 border-solid border-sir-header-blue hover:bg-sir-green-dark hover:text-white hover:border-sir-green-dark transition-all no-underline">View cart</a>
+
+                            <a href="#" class="h-[68px] text-[19px] uppercase flex items-center justify-center text-sir-header-blue border-2 border-solid border-sir-header-blue hover:bg-sir-green-dark hover:text-white hover:border-sir-green-dark transition-all no-underline">Save for later</a>
+
+                            <a href="#" class="h-[68px] text-[19px] uppercase flex items-center justify-center text-sir-header-blue border-2 border-solid border-sir-header-blue hover:bg-sir-green-dark hover:text-white hover:border-sir-green-dark transition-all no-underline">Check out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+</content>
+
+<div class="modalContainer backdrop-blur-sm bg-sir-black/80 w-screen h-screen fixed inset-0 flex items-center justify-center z-[999] transition-all hidden">
+    <div class="modal bg-white px-[50px] pt-3 pb-5 w-full max-w-[1120px] mx-10 relative border border-solid border-sir-black">
+        <a href="#" class="close absolute right-16 top-[44px] flex flex-col space-y-3 no-underline">
+            <img src="images/close.svg" class="w-[22px] inline-block mx-auto">
+            <span class="text-xs text-sir-black leading-none">Close Preview</span>
+        </a>
+        <div class="top">
+            <h2 class="text-2.5xl text-sir-green-dark font-normal">Generated Preview</h2>
+        </div>
+
+        <div class="mid h-[calc(100vh-400px)] overflow-scroll my-5 flex items-center justify-center">
+            <img src="images/Large-Preview.jpg" class="max-h-[calc(100vh-400px)]">
+        </div>
+
+        <div class="bottom flex gap-0">
+            <img src="images/modal-1.jpg" alt="">
+            <img src="images/modal-2.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<footer role="contentinfo">
+    <div class="footer-left">
+        <div>
+            Society of Interventional Radiology<br/>
+            3975 Fair Ridge Drive • Suite 400 North • Fairfax, Virginia 22033<br/>
+            (703) 691-1805  • Fax (703) 691-1855
+        </div>
+        <div role="menu">
+            <a role="menuitem" href="#">Terms of Use</a>
+            <a role="menuitem" href="#">Privacy Policy</a>
+            <a role="menuitem" href="#">Content, Links and Copyright</a>
+            <a role="menuitem" href="#">Advertise</a>
+        </div>
+        <div>
+            <img src="/img/sir-logo-white.svg" alt="SIR logo">
+        </div>
+        <div>TRANSLATE</div>
+        <div>© 2021 The Society of Interventional Radiology. All rights reserved.</div>
+    </div>
+
+    <div class="footer-product-types" role="menu">
+        <p>PRODUCT TYPES</p>
+        <ul>
+            <li role="menuitem"><a href="#">Discharge Summaries</a></li>
+            <li role="menuitem"><a href="#">Operations Toolkits</a></li>
+            <li role="menuitem"><a href="#">Marketing Toolkits</a></li>
+            <li role="menuitem"><a href="#">Staffing Toolkits</a></li>
+            <li role="menuitem"><a href="#">Equipment Booklet</a></li>
+            <li role="menuitem"><a href="#">Coding Guidances</a></li>
+            <li role="menuitem"><a href="#">Reimbursement & Claims Templates</a></li>
+            <li role="menuitem"><a href="#">Revenue Cycle Management Audit</a></li>
+            <li role="menuitem"><a href="#">Facilities Guidelines</a></li>
+            <li role="menuitem"><a href="#">EHR Medical Templates</a></li>
+            <li role="menuitem"><a href="#">Informed Consent Forms</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/mod.js"></script>
+</body>
+
+</html>
