@@ -316,6 +316,8 @@ textarea {
     Content Styles
     ==============*/
 
+    .nw h1, .nw h2, .nw h3, .nw h4, .nw h5, .nw h6, .nw ul, .nw li, .nw p { margin: 0px;padding: 0px;list-style:none;}
+
     .content-cover--active{
       position: relative;
     }
@@ -720,7 +722,7 @@ textarea {
   .ppg-image-picker {width:372px; margin-top:20px;}
   .ppg-image-picker ul{display: flex; flex-direction: row; justify-content: space-between; margin: 0; padding: 0;}
   .ppg-image-picker img {width:114px; height: 114px; object-fit: cover; background-color: var(--sir-light-blue);}
-  .ppg-description{font-size: 22px; color: var(--sir-blue); font-size: 400;}
+  .ppg-description{font-size: 22px; color: var(--sir-blue); font-weight: 400;}
   .ppg-description ul{  list-style: inside; font-size: 18px; font-weight: 300; color: var(--sir-green-dark);}
   .ppg-item-details h2{font-size: 22px; font-weight: 400; color: var(--sir-blue);}
   .ppg-item-details {font-size: 16p;}
