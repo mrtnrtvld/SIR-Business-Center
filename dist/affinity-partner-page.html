@@ -80,75 +80,90 @@
         </div>
         </nav>    
       </header>
+      <style>.ap-intro{display:flex; margin-top:0px; padding:0 0 56px 0; border-bottom:1px solid var(--sir-blue);}
+        .ap-intro p{padding: 0; margin: 0;}
+        .ap-intro button, .ap-buttons{text-decoration:none; width: 346px; height: 68px; display: flex; justify-content: center; align-items: center; font-size: 19px; text-transform: uppercase; cursor: pointer; box-sizing: border-box; color: var(--sir-white); background-color: var(--sir-green-dark); border: none; margin:0 0 10px 50px; }
+        .ap-slider{width: 100%; margin:56px 0 0 0; display: flex; justify-content: center; padding:0 0 56px 0; border-bottom:1px solid var(--sir-blue);}
+        .ap-slider ul{list-style: none; padding: 0; margin: 0;}
+        .ap-slider-grid{display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows:1fr 1fr; grid-gap: 20px; width: 100%;}
+        .ap-slider-grid li{width: 328px; display: flex; flex-direction: column; align-items: center; text-align: center;}
+        .ap-slider-grid p{font-size: 16px; color: var(--sir-blue);}
+        .ap-slider-grid button, .ap-buttons{text-decoration:none; width: 232px; height: 68px; display: flex; justify-content: center; align-items: center; font-size: 19px; text-transform: uppercase; cursor: pointer; box-sizing: border-box; color: var(--sir-white); background-color: var(--sir-header-blue); border: none; margin:0; }
+        .ap-slider-grid img{width: 328px; height: 140x; object-fit: cover;}
+        @media only screen and (max-width: 1366px) {
+          .ap-slider-grid{display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;}
+        } 
+        @media only screen and (max-width: 834px) {
+          .ap-intro{flex-direction: column; padding: 0 0 20px 0;}
+          .ap-intro button, .ap-buttons{margin:0 0 10px 0; width: 100%;}
+          .ap-intro p{padding: 0 0 20px 0;}
+          .ap-slider-grid{display: grid; grid-template-columns: 1fr; grid-template-rows: auto;}
+        }</style>
     <content id="content-box" class="content">
       <div class="breadcrumb" role="navigation">breadcrumb</div>
-      <div class="product-page-grid">
-        <h1>product title</h1>
-        <div class="ppg-image-box">
-          <div class="ppg-tag">tag</div>
-          <img src="/card-image.73788c80.png" alt="product image">
-          <div class="ppg-image-picker">
-            <ul>
-              <li><img src="/card-image.73788c80.png"></li>
-              <li><img src="/card-image.73788c80.png"></li>
-              <li><img src="/card-image.73788c80.png"></li>
-            </ul>
-          </div>
-        </div>
-        <div class="ppg-details">
-          <div class="ppg-description">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sint reiciendis cumque est debitis impedit ipsa ratione veritatis, eaque doloremque sed quaerat aliquid eius suscipit iusto ipsum possimus dolore necessitatibus!</p>
-            <ul>
-              <li>Retail price: $900</li>
-              <li>Member price: $1</li>
-              <li>Product format: ePub</li>
-              <li>Product type: customizable</li>
-            </ul>
-          </div>
-          <div class="ppg-item-details">
-            <h2>Item Details</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi provident ipsum repudiandae accusantium sunt id dolorem optio eaque a dicta ex velit aliquam inventore laborum consequatur, voluptatum temporibus, voluptas enim.</p>
-          </div>
-        </div>
-        <div class="ppg-summary">
-          <h2>Summary</h2>
-          <ul>
-            <li><span>Member:</span>$900</li>
-            <li><span>Non-member:</span>$950</li>
-          </ul>
-          <ul>
-            <li>add to cart</li>
-            <li>view cart</li>
-            <li>save for later</li>
-            <li>check out</li>
-          </ul>
-          <div id="ppg-sum-savings">member savings: $900</div>
-          <div id="ppg-sum-member">(Become a Member)</div>
-        </div>
-        <div class="ppg-similar-products">
-          <h2>similar products</h2>
-          <div class="ppg-mobile-overflow">
-            <ul>
-              <li><img src="/card-image.73788c80.png" width="252px" height="130px">Product name</li>
-              <li><img src="/card-image.73788c80.png" width="252px" height="130px">Product name</li>
-              <li><img src="/card-image.73788c80.png" width="252px" height="130px">Product name</li>
-            </ul>
-            </div>
-          
-        </div>
-        <div class="ppg-popular-bundles">
-          <h2>included in popular bundles</h2>
-          <div class="ppg-mobile-overflow">
-          <ul>
-            <li><img src="/card-image.73788c80.png" width="252px" height="130px">Bundle name</li>
-            <li><img src="/card-image.73788c80.png" width="252px" height="130px">Bundle name</li>
-            <li><img src="/card-image.73788c80.png" width="252px" height="130px">Bundle name</li>
-          </ul>
-          </div>
-        </div>
+    <h1>Our Partners</h1>
+    <div class="ap-intro">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div>
+        <button>Partner Directory</button>
+        <button>Become a Partner</button>
       </div>
+    </div>
+    <div class="ap-slider">
+      <ul>
+        <li>
+          <ul class="ap-slider-grid">
+            <li>
+                <img src="/logo-placeholder.11fb9242.png" alt="logo placeholder">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>learn more</button>
+            </li>
+            <li>
+              <img src="/logo-placeholder.11fb9242.png" alt="logo placeholder">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>learn more</button>
+            </li>
+            <li>
+              <img src="/logo-placeholder.11fb9242.png" alt="logo placeholder">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>learn more</button>
+            </li>
+            <li>
+              <img src="/logo-placeholder.11fb9242.png" alt="logo placeholder">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>learn more</button>
+            </li>
+            <li>
+              <img src="/logo-placeholder.11fb9242.png" alt="logo placeholder">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>learn more</button>
+            </li>
+            <li>
+              <img src="/logo-placeholder.11fb9242.png" alt="logo placeholder">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>learn more</button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="ap-benefits">
+      <img src="/benefit-image.4a1011e1.png" alt="two people at a table">
+      <div>
+        <h2>Benefits</h2>
+        <ul>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </ul>
+      </div>
+    <div class="ap-buttons">
+       <button>Partner Directory</button>
+       <button>Become a Partner</button>
+    </div>
+    </div>
     </content>
     <footer role="contentinfo">
       <div class="footer-left">
