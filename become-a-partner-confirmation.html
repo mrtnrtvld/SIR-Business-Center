@@ -25,7 +25,7 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/mod.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/css/splide.min.css">
-  </head>
+    </head>
 
 <body class="scrollable"> 
     <header role="banner">
@@ -79,104 +79,31 @@
         </nav>    
       </header>
       <style>
-        .ap-intro{display:flex; margin-top:0px; padding:0 0 56px 0; border-bottom:1px solid var(--sir-blue);}
-        .ap-intro p{padding: 0; margin: 0;}
-        .ap-intro a, .ap-buttons a{text-decoration:none; width: 346px; height: 68px; display: flex; justify-content: center; align-items: center; font-size: 19px; text-transform: uppercase; cursor: pointer; box-sizing: border-box; color: var(--sir-white); background-color: var(--sir-green-dark); border: none; margin:0 0 10px 50px; }
-        .ap-buttons a:first-child{margin-left:0;}
-        .ap-slider{width: 100%; margin:0 0 0 0; display: flex; justify-content: center; padding:0 0 56px 0; border-bottom:1px solid var(--sir-blue);}
-        .ap-slider ul{list-style: none; padding: 0; margin: 0;}
-        .ap-slider-grid{display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows:1fr 1fr; grid-gap: 20px; width: 100%;}
-        .ap-slider-grid li{width: 328px; display: flex; flex-direction: column; align-items: center; text-align: center; margin-top:50px;}
-        .ap-slider-grid p{font-size: 16px; color: var(--sir-blue);}
-        .ap-slider-grid a{text-decoration:none; width: 232px; height: 68px; display: flex; justify-content: center; align-items: center; font-size: 19px; text-transform: uppercase; cursor: pointer; box-sizing: border-box; color: var(--sir-white); background-color: var(--sir-header-blue); border: none; margin:0; }
-        .ap-slider-grid img{min-width:308px; height:120px; border:1px solid rgb(171, 170, 170); object-fit: contain; padding: 10px; display: flex; justify-content: center; align-items: center; color:rgb(171, 170, 170); margin-bottom:20px;}
-        .ap-benefits img{ width: 450px; height: 360px; object-fit: cover;}
-        .ap-benefits{display:flex; flex-wrap: wrap; gap:40px; margin-top: 60px;}
-        .ap-benefits div{ width: calc(100% - 500px);}
-        .ap-buttons{background-color: none; width: 100% !important; display: flex; justify-content:center;}
+        .button-box{ box-sizing: border-box;}
+        .button-box a{
+          background-color: var(--sir-green-light);
+          text-transform: uppercase;
+          text-decoration: none;
+          color: var(--sir-white);
+          width: fit-content;
+          cursor: pointer;
+          padding: 30px 43px;
+          font-size: 19px;
+          font-weight: 500;
+          display: block;
+        }
         @media only screen and (max-width: 1366px) {
-          .ap-slider-grid{display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;}
         } 
         @media only screen and (max-width: 834px) {
-          .ap-intro{flex-direction: column; padding: 0 0 20px 0;}
-          .ap-intro button, .ap-buttons{margin:0 0 10px 0; width: 100%;}
-          .ap-intro p{padding: 0 0 20px 0;}
-          .ap-slider-grid{display: grid; grid-template-columns: 1fr; grid-template-rows: auto;}
-          .ap-benefits img{ width: 390px; height: auto;}
-          .ap-benefits div{ width: 100%;}
-          .ap-benefits{gap:20px; margin-top: 60px;}
-          .ap-buttons{background-color: none; width: 100% !important; display: flex; justify-content:center; flex-direction: column; }
-          .ap-buttons a{margin: 0 0 10px 0;}
         }
       </style>
     <content id="content-box" class="content">
       <div class="breadcrumb" role="navigation">breadcrumb</div>
-    <h1>Our Partners</h1>
-    <div class="ap-intro">
-      <p>The IR Business Center vendor directory is a solution provider for Interventional Radiology practices.  It is a convenient way to search for vendors that offer services<br><br> 
-        Disclaimer<br><br> 
-        IR Business Center vendor directory includes tools and services that are provided as a convenience to Interventional Radiology (IR) practices.  The information included in this vendor directory may be used to assist IR practices as they research potential vendors in support of their organizational requirements. The information is provided solely as a convenience to consumers.<br><br> 
-        Society of Interventional Radiology (SIR) does not endorse the products listed in the vendor directory and IR practices are not obligated to use them. SIR does not ensure the accuracy or completeness of vendor responses and does not endorse any vendors. SIR strongly suggests that all organizations perform their due diligence—including technical and financial reviews—before making any vendor decisions. Vendors may not explicitly state or imply otherwise through any means of communication.
-        </p>
-      <div>
-        <a href="partner-directory.html">Partner Directory</a>
-        <a href="become-a-partner.html">Become a Partner</a>
-      </div>
-    </div>
-    <div class="ap-slider">
-      <ul>
-        <li>
-          <ul class="ap-slider-grid">
-            <li>
-                <img src="img/affinity-partners/SIR_logos_BostonS_468x360.jpg" alt="Boston Scientific">
-                <a href="partner-directory.html#boston">learn more</a>
-            </li>
-            <li>
-              <img src="img/affinity-partners/SIR_logos_Medtronic_468x360.jpg" alt="Medtronic PVH">
-              <a href="partner-directory.html#medtronic">learn more</a>
-            </li>
-            <li>
-              <img src="img/affinity-partners/SIR_logos_Penumbra_468x360.jpg" alt="Penumbra">
-              <a href="partner-directory.html#penumbra">learn more</a>
-            </li>
-            <li>
-              <img src="img/affinity-partners/SIR_logos_Inari_468x360.jpg" alt="Inari Medical">
-              <a href="partner-directory.html#inari">learn more</a>
-            </li>
-            <li>
-              <img alt="US Renal">
-              <a href="partner-directory.html#us">learn more</a>
-            </li>
-            <li>
-              <img alt="img/affinity-partners/SIR_logos_RCCS_468x360.jpg">
-              <a href="partner-directory.html#rccs">learn more</a>
-            </li>
-            <li>
-              <img alt="Margin Care"> 
-              <a href="partner-directory.html#margin">learn more</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="ap-benefits">
-      <img src="img/benefit-image.png" alt="two people at a table">
-      <div>
-        <h2>Value to SIR members</h2>
-        <ul>
-          <li>Save member time by not having to search for vendors.</li>
-          <li>LImprove the quality of your services.</li>
-          <li>Increase operational or financial efficiencies.</li>
-          <li>Reduce your costs.</li>
-          <li>Expand the availability of your services.</li>
-          <li>Accelerate service delivery.</li>
-          <li>Focus on your core business functions.</li>
-        </ul>
-      </div>
-    <div class="ap-buttons">
-      <a href="partner-directory.html">Partner Directory</a>
-      <a href="become-a-partner.html">Become a Partner</a>
-    </div>
+        <h1>Affinity Partner Inquiry Sent</h1>
+        <p>Thank you for submitting your query, an SIR team member will get in contact with you for more information.</p>
+        <div class="button-box">
+          <a href="index.html">Back to Home</a>
+        </div>
     </div>
     </content>
     <footer role="contentinfo">
