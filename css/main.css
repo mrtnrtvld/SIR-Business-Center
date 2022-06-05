@@ -600,8 +600,16 @@ textarea {
   .affinity-partners-block ul li{
     list-style: none;
   }
+
+  .affinity-partners-block .splide__slide img{
+    width: 180px;
+    height: 138px;
+    object-fit: contain;
+    padding: 20px;
+  }
+  
   #affinity-slider{
-    margin: 20px 0 80px 0;
+    margin: 20px 0 0 0;
   }
   .affinity-partners-block .splide__pagination{
     bottom: -4em !important;
@@ -1060,8 +1068,10 @@ textarea {
   }
 
   .affinity-partners-block .splide__slide img{
-    width: 180px;
+    width: 125px;
     height: 90px;
+    object-fit: contain;
+    padding: 0;
   }
 
   footer{
@@ -1182,6 +1192,7 @@ textarea {
   .affinity-partners-block .splide__slide img{
     width: 300px;
     height: auto;
+    object-fit: contain;
   }
   .affinity-partners-block ul li ul {
     flex-direction: column;
