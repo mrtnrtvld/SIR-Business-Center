@@ -563,6 +563,7 @@ textarea {
     font-weight: 500;
     font-size: 19px;
     text-transform: uppercase;
+    text-decoration: none;
     color: var(--sir-white);
     width: fit-content;
     padding: 30px 43px;
