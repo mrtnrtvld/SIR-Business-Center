@@ -368,6 +368,7 @@
         description.classList.add('description');
         description.textContent = partner["Long Description"];
         url.setAttribute('href', partner["Website"]);
+        url.setAttribute('target', '_blank');
         url.innerText = "Visit Website";
        
         list.appendChild(partnerBox);
