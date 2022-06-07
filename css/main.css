@@ -337,6 +337,13 @@ textarea {
      background-color: var(--sir-green-dark);
      position: relative;
    }
+   .homepage-ad-banner{margin-top:60px; display: flex; align-items: center; justify-content: center; }
+   @media only screen and (max-width: 834px) { 
+     .homepage-ad-banner{
+      margin-top:10px;
+     }
+  }
+  .homepage-ad-banner img{ width:100%; height:90px; object-fit:contain; }
 
    .breadcrumb{
      font-size: 19px;
